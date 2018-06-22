@@ -63,7 +63,7 @@ var laikasSekundemis = double.Parse(laikasSekundemisTekstas);
 
 var greitis = (atstumasMetrais / 1000) / (laikasSekundemis/3600);
 
-Console.WriteLine($"Greitis km/h: " greitis);
+Console.WriteLine($"Greitis km/h: ", greitis);
 
 Console.ReadLine();
 ```
@@ -102,10 +102,10 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite pirma skaiciu:");
-var skaicius1 = int.parse(Console.ReadLine());
+var skaicius1 = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Iveskite antra skaiciu:");
-var skaicius2 = int.parse(Console.ReadLine());
+var skaicius2 = int.Parse(Console.ReadLine());
 
 if(skaicius1 == skaicius2)
 {
@@ -123,13 +123,13 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite pirma skaiciu:");
-var skaicius1 = int.parse(Console.ReadLine());
+var skaicius1 = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Iveskite antra skaiciu:");
-var skaicius2 = int.parse(Console.ReadLine());
+var skaicius2 = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Iveskite trecia skaiciu:");
-var skaicius3 = int.parse(Console.ReadLine());
+var skaicius3 = int.Parse(Console.ReadLine());
 
 if(skaicius1 > skaicius2 && skaicius1 > skaicius3)
 {
@@ -152,7 +152,7 @@ Console.ReadLine();
 
 ```c#
 Console.WriteLine("Iveskite vaiko pazymi:");
-var pazymys = int.parse(Console.ReadLine());
+var pazymys = int.Parse(Console.ReadLine());
 
 switch(pazymys) 
 {
