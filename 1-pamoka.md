@@ -57,3 +57,13 @@ Console.WriteLine($"Greitis km/h: " greitis);
 
 Console.ReadLine();
 ```
+
+5. Parašyti programą, kuri prašo įvesti vardą, pavardę ir gimimo vietą ir atspausdina juos ekrane tokiu formatu:
+
+`Jonas Jonaitis deginasi Palangoje`
+
+Pabandyti sujungti tekstą šiais skirtingais būdais: `+`, `string.Concat()`, `string.Format()`, bei panaudojant interpoliaciją.
+
+
+
+
