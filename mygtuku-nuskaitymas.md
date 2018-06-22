@@ -1,3 +1,5 @@
+dokumentacija: https://msdn.microsoft.com/en-us/library/471w8d85(v=vs.110).aspx
+
 ```c#
    while (true)
    {
