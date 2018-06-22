@@ -25,7 +25,7 @@ var amzius = Console.ReadLine();
 Console.WriteLine($"{vardas} {pavarde} {amzius}");
 Console.ReadLine();
 ```
-Parašyti programą, kuri prašo įvesti apskritimo spindulį ir pagal jį suskaičiuoja jo ilgį ir plotą.
+3. Parašyti programą, kuri prašo įvesti apskritimo spindulį ir pagal jį suskaičiuoja jo ilgį ir plotą.
 
 ```c#
 Console.WriteLine("Iveskite apskritimo spinduli:");
@@ -37,6 +37,23 @@ var plotas = Math.PI * Math.Pow(spindulys, 2);
 
 Console.WriteLine("Apskritimo ilgis: " + ilgis);
 Console.WriteLine("Apskritimo plotas: " + plotas);
+
+Console.ReadLine();
+```
+4. Parašyti programą, kuri prašo įvesti atstumą (metrais) ir laiką (sekundėmis), o iš įvestų duomenų suskaičiuoja greitį km/h formatu.
+
+```c#
+Console.WriteLine("Iveskite atstuma metrais:");
+var atstumasMetraisTekstas = Console.ReadLine();
+var atstumasMetrais = double.Parse(atstumasTekstas);
+
+Console.WriteLine("Iveskite laika sekundemis:");
+var laikasSekundemisTekstas = Console.ReadLine();
+var laikasSekundemis = double.Parse(laikasSekundemisTekstas);
+
+var greitis = (atstumasMetrais / 1000) / (laikasSekundemis/3600);
+
+Console.WriteLine($"Greitis km/h: " greitis);
 
 Console.ReadLine();
 ```
