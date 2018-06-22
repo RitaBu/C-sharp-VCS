@@ -25,3 +25,18 @@ var amzius = Console.ReadLine();
 Console.WriteLine($"{vardas} {pavarde} {amzius}");
 Console.ReadLine();
 ```
+Parašyti programą, kuri prašo įvesti apskritimo spindulį ir pagal jį suskaičiuoja jo ilgį ir plotą.
+
+```c#
+Console.WriteLine("Iveskite apskritimo spinduli:");
+var spindulysTekstas = Console.ReadLine();
+var spindulys = int.Parse(spindulysTekstas);
+
+var ilgis = 2 * Math.PI * spindulys;
+var plotas = Math.PI * Math.Pow(spindulys, 2);
+
+Console.WriteLine("Apskritimo ilgis: " + ilgis);
+Console.WriteLine("Apskritimo plotas: " + plotas);
+
+Console.ReadLine();
+```
