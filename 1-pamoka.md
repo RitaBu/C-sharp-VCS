@@ -64,6 +64,114 @@ Console.ReadLine();
 
 Pabandyti sujungti tekstą šiais skirtingais būdais: `+`, `string.Concat()`, `string.Format()`, bei panaudojant interpoliaciją.
 
+```c#
+Console.WriteLine("Koks jusu vardas?");
+var vardas = Console.ReadLine();
 
+Console.WriteLine("Kokia jusu pavarde?");
+var pavarde = Console.ReadLine();
 
+Console.WriteLine("Kuriame mieste gimete?");
+var miestas = Console.ReadLine();
 
+var tekstas1 = vardas + " " + pavarde + " deginasi " + miestas;
+var tekstas2 = string.Concat(vardas, " ", pavarde, " deginasi ", miestas); 
+var tekstas3 = string.Format("{0} {1} deginasi {2}", vardas, pavarde, miestas);
+var tekstas4 = $"{vardas} {pavarde} deginasi {miestas}";
+
+Console.WriteLine(tekstas1);
+Console.WriteLine(tekstas2);
+Console.WriteLine(tekstas3);
+Console.WriteLine(tekstas4);
+
+Console.ReadLine();
+```
+6. Parašyti programą, kuri prašo įvesti du skaičius ir patikrina ar jie lygūs. Rezultatą išvesti tokiu formatu: 
+
+`skaičius1 ir skaičius2 yra lygūs/nelygūs`
+
+```c#
+Console.WriteLine("Iveskite pirma skaiciu:");
+var skaicius1 = int.parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite antra skaiciu:");
+var skaicius2 = int.parse(Console.ReadLine());
+
+if(skaicius1 == skaicius2)
+{
+  Console.WriteLine($"{skaicius1} ir {skaicius2} yra lygus.");
+}
+else 
+{
+  Console.WriteLine($"{skaicius1} ir {skaicius2} yra nelygus.");
+}
+
+Console.ReadLine();
+```
+
+7. Parašyti programą, kuri prašo įvesti 3 skaičius ir nustato didžiausią iš jų.
+
+```c#
+Console.WriteLine("Iveskite pirma skaiciu:");
+var skaicius1 = int.parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite antra skaiciu:");
+var skaicius2 = int.parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite trecia skaiciu:");
+var skaicius3 = int.parse(Console.ReadLine());
+
+if(skaicius1 > skaicius2 && skaicius1 > skaicius3)
+{
+  Console.WriteLine($"{skaicius1} yra didziausias.");
+}
+else if(skaicius2 > skaicius1 && skaicius2 > skaicius3)
+{
+  Console.WriteLine($"{skaicius2} yra didziausias.");
+}
+else 
+{
+  Console.WriteLine($"{skaicius3} yra didziausias.");
+}
+
+Console.ReadLine();
+```
+
+8. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. 
+(10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
+
+```c#
+Console.WriteLine("Iveskite vaiko pazymi:");
+var pazymys = int.parse(Console.ReadLine());
+
+switch(pazymys) 
+{
+  case 10:
+    Console.WriteLine("Puiku!");
+    break;
+  case 9:
+  case 8:
+    Console.WriteLine("Laba gerai");
+    break;
+  case 7:
+  case 6:
+    Console.WriteLine("Gerai");
+    break;
+  case 5:
+    Console.WriteLine("Vidutiniškai");
+    break;
+  case 4:
+    Console.WriteLine("Teigiamas");
+    break;
+  case 3:
+  case 2: 
+  case 1:
+    Console.WriteLine("Labai blogai!");
+    break;
+  default:
+    Console.WriteLine("Tokio pazymio nera vertinimo sistemoje.");
+    break;
+}
+
+Console.ReadLine();
+```
