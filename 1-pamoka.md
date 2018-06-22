@@ -1,3 +1,13 @@
+```c#
+//uzkomentuota eilute
+
+/* 
+  uzkomentuotas kodo blokas
+*/
+
+//paselectinus norimas eilutes ir CTRL + K + C jas visas uzkomentuoja (windows)
+//paselectinus norimas eilutes ir CTRL + K + U jas visas atkomentuoja (windows)
+```
 
 1. Parašyti programą, kuri nuskaito įvestą tekstą ir atspausdina jį ekrane. Atspausdintus duomenis rodyti, kol nepaspaudžiamas ENTER. 
 
@@ -163,9 +173,7 @@ switch(pazymys)
   case 4:
     Console.WriteLine("Teigiamas");
     break;
-  case 3:
-  case 2: 
-  case 1:
+  case 3: case 2: case 1: //kad uzimtu maziau vietos, galime case surasyt i viena eilute sitaip
     Console.WriteLine("Labai blogai!");
     break;
   default:
