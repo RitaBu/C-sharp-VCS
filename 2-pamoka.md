@@ -169,3 +169,31 @@ for (int i = 0; i < 4; i++){
 
 Console.ReadLine();
 ```
+10. Sukurti programą, kuri nuskaitinėja eilutes tol, kol negauna tuščios ir deda eilutes į masyvą. Naudojant foreach ciklą atspausdinti masyvą.
+
+```c#
+bool negavauTusciosEilutes = true;
+string[] eiluciuMasyvas = new string[10];
+int iteratorius = 0;
+
+while (negavauTusciosEilutes)
+{
+    var eilute = Console.ReadLine();
+    if (eilute == "")
+    {
+        negavauTusciosEilutes = false;
+    }
+    else 
+    {
+        eiluciuMasyvas[iteratorius] = eilute;
+        iteratorius++;
+    }
+}
+
+foreach(var eilute in eiluciuMasyvas) 
+{
+    Console.WriteLine(eilute);
+}
+
+Console.ReadLine();
+```
