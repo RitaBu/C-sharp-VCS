@@ -16,7 +16,7 @@ else
     Console.WriteLine("Skaicius yra nelyginis.");
 }
 ```
-galima ir šitaip, išnaudojant trinarį operatorių:
+galima ir šitaip, išnaudojant [trinarį operatorių](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator):
 
 ```c#
 Console.WriteLine("Iveskite naturaluji skaiciu: ");
