@@ -296,8 +296,14 @@ class Program
     {
         for (var i = 1; i <= 10; i++)
         {
-            var skaicius = pazymiai.Where(p => p == i);
-            Console.WriteLine($"{i}-u yra: {skaicius}");
+            var pazymioSk = 0;
+
+            foreach(var pazymis in pazymiai)
+            {
+                if (pazymis == i) pazymioSk++;
+            }
+
+            Console.WriteLine($"{i}-u yra: {pazymioSk}");
         }
     }
 }
