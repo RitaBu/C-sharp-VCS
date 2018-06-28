@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Viktorina
 {
@@ -13,13 +13,30 @@ namespace Viktorina
             {
                 Console.Write($"{i + 1}. {galimiAtsakymai[klausimoNr, i]} ");
             }
+
+            Console.WriteLine();
         }
 
         public static int NuskaitykAtsakyma() 
         {
-            Console.WriteLine("\nIveskite atsakyma:");
-            var atsakymas = int.Parse(Console.ReadLine());
-            return atsakymas;
+            bool ivedeTesingai = false;
+
+            while(!ivedeTesingai)
+            {
+                try
+                {
+                    Console.WriteLine("Iveskite atsakyma:");
+                    var atsakymas = int.Parse(Console.ReadLine());
+                    ivedeTesingai = true;
+                    return atsakymas;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Neteisingu formatu ivestas atskaymas. Bandykite dar karta");
+                } 
+            }
+
+            return 0;
         }
     }
 }
